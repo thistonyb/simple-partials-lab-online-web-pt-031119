@@ -8,7 +8,7 @@ RSpec.describe "show_view" do
 
   before do
     5.times do
-      Student.create(name: Faker::Name.name, hometown: Faker::Address.city, birthday: Faker::Date.between(from: 25.years.ago, to: 18.years.ago))
+      Student.create(name: Faker::Name.name, hometown: Faker::Address.city, birthday: Faker::Date.between(from: 2.years.ago, to: 1.years.ago))
     end
     Student.all.each do |student|
       ClassroomStudent.create(student: student, classroom: classroom)
